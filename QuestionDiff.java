@@ -2,19 +2,9 @@
 //question is never called by itself (find out how to do this)
 public class QuestionDiff{
     private int currentAvg;
-    public QuestionDiff(int Avg){
-        currentAvg=avg;
+    public QuestionDiff(int questionsRight,int questionsTotal){
+        currentAvg=//the avg of these two here;
+        //this should equal either 1 2 3 or 4, (.25,.5,.75,1)
     }
-    if(currentAvg==1){
-
-    }
-    if(currentAvg==2){
-
-    }
-    if(currentAvg==3){
-
-    }
-    if(currentAvg==4){
-        
-    }
+    return currentAvg
 }
