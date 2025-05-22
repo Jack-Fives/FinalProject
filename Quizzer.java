@@ -20,7 +20,7 @@ public class Quizzer{
         if(quizType.equals("history")){
         
             for(int i=0;i<10;i++){
-                HistoryQuestion(Averages(questionNum,score),questionNum);
+                if(HistoryQuestion(Averages(questionNum,score),questionNum).equals("Correct"))score++;
                 questionNum++;
             }
         }
