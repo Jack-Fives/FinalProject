@@ -3,8 +3,7 @@
 public class QuestionDiff{
     private int currentAvg;
     public QuestionDiff(int questionsRight,int questionsTotal){
-        currentAvg=//the avg of these two here;
+        //currentAvg=//the avg of these two here;
         //this should equal either 1 2 3 or 4, (.25,.5,.75,1)
     }
-    return currentAvg
 }

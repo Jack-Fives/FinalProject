@@ -55,7 +55,7 @@ public class HistoryQuestion{
         Scanner posit=new Scanner(System.in);
         String answer;
         if(theAvg==1){
-            System.out.println(HistoryQuestion1[thePlace]);
+            System.out.println(HistoryQuestions1[thePlace]);
             for(int i=0;i<3;i++){
                 System.out.println(HistoryAnswers1[thePlace][i]);
             }
@@ -64,7 +64,7 @@ public class HistoryQuestion{
             return "False";
         }
         if(theAvg==2){
-            System.out.println(HistoryQuestion2[thePlace]);
+            System.out.println(HistoryQuestions2[thePlace]);
             for(int i=0;i<3;i++){
                 System.out.println(HistoryAnswers2[thePlace][i]);
             }
@@ -73,7 +73,7 @@ public class HistoryQuestion{
             return "False";
         }
         if(theAvg==3){
-            System.out.println(HistoryQuestion3[thePlace]);
+            System.out.println(HistoryQuestions3[thePlace]);
             for(int i=0;i<3;i++){
                 System.out.println(HistoryAnswers3[thePlace][i]);
             }
@@ -82,7 +82,7 @@ public class HistoryQuestion{
             return "False";
         }
         if(theAvg==4){
-            System.out.println(HistoryQuestion4[thePlace]);
+            System.out.println(HistoryQuestions4[thePlace]);
             for(int i=0;i<3;i++){
                 System.out.println(HistoryAnswers4[thePlace][i]);
             }
