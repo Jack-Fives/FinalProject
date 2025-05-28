@@ -56,7 +56,7 @@ public class MathQuestion{
         String answer;
         if(theAvg==1){
             System.out.println(MathQuestions1[thePlace]);
-            for(int i=0;i<3;i++){
+            for(int i=0;i<4;i++){
                 System.out.println(MathAnswers1[thePlace][i]);
             }
             answer=posit.nextLine();
@@ -65,7 +65,7 @@ public class MathQuestion{
         }
         if(theAvg==2){
             System.out.println(MathQuestions2[thePlace]);
-            for(int i=0;i<3;i++){
+            for(int i=0;i<4;i++){
                 System.out.println(MathAnswers2[thePlace][i]);
             }
             answer=posit.nextLine();
@@ -74,7 +74,7 @@ public class MathQuestion{
         }
         if(theAvg==3){
             System.out.println(MathQuestions3[thePlace]);
-            for(int i=0;i<3;i++){
+            for(int i=0;i<4;i++){
                 System.out.println(MathAnswers3[thePlace][i]);
             }
             answer=posit.nextLine();
@@ -83,7 +83,7 @@ public class MathQuestion{
         }
         if(theAvg==4){
             System.out.println(MathQuestions4[thePlace]);
-            for(int i=0;i<3;i++){
+            for(int i=0;i<4;i++){
                 System.out.println(MathAnswers4[thePlace][i]);
             }
             answer=posit.nextLine();

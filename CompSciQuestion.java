@@ -56,7 +56,7 @@ public class CompSciQuestion{
         String answer;
         if(theAvg==1){
             System.out.println(CompSciQuestions1[thePlace]);
-            for(int i=0;i<3;i++){
+            for(int i=0;i<4;i++){
                 System.out.println(CompSciAnswers1[thePlace][i]);
             }
             answer=posit.nextLine();
@@ -65,7 +65,7 @@ public class CompSciQuestion{
         }
         if(theAvg==2){
             System.out.println(CompSciQuestions2[thePlace]);
-            for(int i=0;i<3;i++){
+            for(int i=0;i<4;i++){
                 System.out.println(CompSciAnswers2[thePlace][i]);
             }
             answer=posit.nextLine();
@@ -74,7 +74,7 @@ public class CompSciQuestion{
         }
         if(theAvg==3){
             System.out.println(CompSciQuestions3[thePlace]);
-            for(int i=0;i<3;i++){
+            for(int i=0;i<4;i++){
                 System.out.println(CompSciAnswers3[thePlace][i]);
             }
             answer=posit.nextLine();
@@ -83,7 +83,7 @@ public class CompSciQuestion{
         }
         if(theAvg==4){
             System.out.println(CompSciQuestions4[thePlace]);
-            for(int i=0;i<3;i++){
+            for(int i=0;i<4;i++){
                 System.out.println(CompSciAnswers4[thePlace][i]);
             }
             answer=posit.nextLine();
