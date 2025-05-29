@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class MathQuestion{
-    //takes the current question avg and the type and returns the appropriate question
+    //see documentation in HistoryQuestion method for explanation
     private int theAvg;
     private int thePlace;
     private String[] MathQuestions1={
