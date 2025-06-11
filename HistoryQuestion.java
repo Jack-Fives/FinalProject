@@ -80,6 +80,7 @@ public class HistoryQuestion{
             }
             //records the students answer
             answer=posit.nextLine();
+            posit.close();
             //checks to see if the students answer is equal to the correct answer
             if(answer.toLowerCase().equals(HistoryKey1[thePlace]))return "Correct";
             return "False";
@@ -94,6 +95,7 @@ public class HistoryQuestion{
             }
             //records the students answer
             answer=posit.nextLine();
+            posit.close();
             //checks to see if the students answer is equal to the correct answer
             if(answer.toLowerCase().equals(HistoryKey2[thePlace]))return "Correct";
             return "False";
@@ -108,6 +110,7 @@ public class HistoryQuestion{
             }
             //records the students answer
             answer=posit.nextLine();
+            posit.close();
             //checks to see if the students answer is equal to the correct answer
             if(answer.toLowerCase().equals(HistoryKey3[thePlace]))return "Correct";
             return "False";
@@ -122,10 +125,12 @@ public class HistoryQuestion{
             }
             //records the students answer
             answer=posit.nextLine();
+            posit.close();
             //checks to see if the students answer is equal to the correct answer
             if(answer.toLowerCase().equals(HistoryKey4[thePlace]))return "Correct";
             return "False";
         }
+        posit.close();
         return "";
         
     }

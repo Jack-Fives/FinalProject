@@ -60,6 +60,7 @@ public class MathQuestion{
                 System.out.println(MathAnswers1[thePlace][i]);
             }
             answer=posit.nextLine();
+            posit.close();
             if(answer.toLowerCase().equals(MathKey1[thePlace]))return "Correct";
             return "False";
         }
@@ -69,6 +70,7 @@ public class MathQuestion{
                 System.out.println(MathAnswers2[thePlace][i]);
             }
             answer=posit.nextLine();
+            posit.close();
             if(answer.toLowerCase().equals(MathKey2[thePlace]))return "Correct";
             return "False";
         }
@@ -78,6 +80,7 @@ public class MathQuestion{
                 System.out.println(MathAnswers3[thePlace][i]);
             }
             answer=posit.nextLine();
+            posit.close();
             if(answer.toLowerCase().equals(MathKey3[thePlace]))return "Correct";
             return "False";
         }
@@ -87,9 +90,11 @@ public class MathQuestion{
                 System.out.println(MathAnswers4[thePlace][i]);
             }
             answer=posit.nextLine();
+            posit.close();
             if(answer.toLowerCase().equals(MathKey4[thePlace]))return "Correct";
             return "False";
         }
+        posit.close();
         return "";
         
     }

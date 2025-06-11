@@ -60,6 +60,7 @@ public class CompSciQuestion{
                 System.out.println(CompSciAnswers1[thePlace][i]);
             }
             answer=posit.nextLine();
+            posit.close();
             if(answer.toLowerCase().equals(CompSciKey1[thePlace]))return "Correct";
             return "False";
         }
@@ -69,6 +70,7 @@ public class CompSciQuestion{
                 System.out.println(CompSciAnswers2[thePlace][i]);
             }
             answer=posit.nextLine();
+            posit.close();
             if(answer.toLowerCase().equals(CompSciKey2[thePlace]))return "Correct";
             return "False";
         }
@@ -78,6 +80,7 @@ public class CompSciQuestion{
                 System.out.println(CompSciAnswers3[thePlace][i]);
             }
             answer=posit.nextLine();
+            posit.close();
             if(answer.toLowerCase().equals(CompSciKey3[thePlace]))return "Correct";
             return "False";
         }
@@ -87,9 +90,11 @@ public class CompSciQuestion{
                 System.out.println(CompSciAnswers4[thePlace][i]);
             }
             answer=posit.nextLine();
+            posit.close();
             if(answer.toLowerCase().equals(CompSciKey4[thePlace]))return "Correct";
             return "False";
         }
+        posit.close();
         return "";
         
     }

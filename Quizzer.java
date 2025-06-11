@@ -12,10 +12,18 @@ public class Quizzer{
         int questionNum=0;
         //records the number of correct questions
         int score=0;
+        //records how many of each question the user answered
+        int lev1=0;
+        int lev2=0;
+        int lev3=0;
+        int lev4=0;
+
         //scanner is used to decide starting level
         System.out.println("What level would you like to start at: 1,2,3 or 4?");
         Scanner whatLevel=new Scanner(System.in);
         int level=whatLevel.nextInt();
+        whatQuiz.close();
+        whatLevel.close();
         //makes sure that the level chosen is valid
         if(level>4||level<1) {
             System.out.println("Invalid level, please try again");
@@ -39,6 +47,18 @@ public class Quizzer{
             }
             //regardless it goes onto the next question
             questionNum++;
+            if(level==1){
+                lev1++;
+            }
+            if(level==2){
+                lev2++;
+            }
+            if(level==3){
+                lev3++;
+            }
+            if(level==4){
+                lev4++;
+            }
             //for loop repeats the above process 9 more times
             for(int i=0;i<9;i++){
                 //gets the current average by calling the averages method
@@ -54,10 +74,25 @@ public class Quizzer{
                     System.out.println("Wrong");
                 }
                 questionNum++;
+                if(thisAverage.returnDiff()==1){
+                    lev1++;
+                }
+                if(thisAverage.returnDiff()==2){
+                    lev2++;
+                }
+                if(thisAverage.returnDiff()==3){
+                    lev3++;
+                }
+                if(thisAverage.returnDiff()==4){
+                    lev4++;
+                }
             }
             //prints the final value of score
-            System.out.println("Final score: "+score);
-
+            System.out.println("Final score: "+score+" questions correct");
+            System.out.println("You answered "+ lev1+" level 1 questions, ");
+            System.out.print(lev2+" level 2 questions,");
+            System.out.print(lev3+" level 3 questions,");
+            System.out.print("and "+lev2+" level 4 questions,");
         }
         //the process above repeats for each of the following questions
         else if(quizType.equals("comp sci")){
@@ -70,6 +105,18 @@ public class Quizzer{
                 System.out.println("Wrong");
             }
             questionNum++;
+            if(level==1){
+                lev1++;
+            }
+            if(level==2){
+                lev2++;
+            }
+            if(level==3){
+                lev3++;
+            }
+            if(level==4){
+                lev4++;
+            }
             for(int i=0;i<9;i++){
                 Averages thisAverage=new Averages(questionNum,score);
                 thisAverage.currentAvg();
@@ -82,8 +129,24 @@ public class Quizzer{
                     System.out.println("Wrong");
                 }
                 questionNum++;
+                if(thisAverage.returnDiff()==1){
+                 lev1++;
+                }
+                if(thisAverage.returnDiff()==2){
+                lev2++;
+                }
+                if(thisAverage.returnDiff()==3){
+                    lev3++;
+                }
+                if(thisAverage.returnDiff()==4){
+                    lev4++;
+                }
             }
-            System.out.println("Final score: "+score);
+            System.out.println("Final score: "+score+" questions correct");
+            System.out.println("You answered "+ lev1+" level 1 questions, ");
+            System.out.print(lev2+" level 2 questions,");
+            System.out.print(lev3+" level 3 questions,");
+            System.out.print("and "+lev2+" level 4 questions,");
         }
         else if(quizType.equals("math")){
             MathQuestion firstQuestion=new MathQuestion(level,questionNum);
@@ -95,6 +158,18 @@ public class Quizzer{
                 System.out.println("Wrong");
             }
             questionNum++;
+            if(level==1){
+                lev1++;
+            }
+            if(level==2){
+                lev2++;
+            }
+            if(level==3){
+                lev3++;
+            }
+            if(level==4){
+                lev4++;
+            }
             for(int i=0;i<9;i++){
                 Averages thisAverage=new Averages(questionNum,score);
                 thisAverage.currentAvg();
@@ -107,9 +182,24 @@ public class Quizzer{
                     System.out.println("Wrong");
                 }
                 questionNum++;
+                if(thisAverage.returnDiff()==1){
+                 lev1++;
+                }
+                if(thisAverage.returnDiff()==2){
+                lev2++;
+                }
+                if(thisAverage.returnDiff()==3){
+                    lev3++;
+                }
+                if(thisAverage.returnDiff()==4){
+                    lev4++;
+                }
             }
-            System.out.println("Final score: "+score);
-
+            System.out.println("Final score: "+score+" questions correct");
+            System.out.println("You answered "+ lev1+" level 1 questions, ");
+            System.out.print(lev2+" level 2 questions,");
+            System.out.print(lev3+" level 3 questions,");
+            System.out.print("and "+lev2+" level 4 questions,");
         }
         else{
             //if the type of quiz is invalid, used recursion to rerun the method
