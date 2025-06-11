@@ -92,7 +92,7 @@ public class Quizzer{
             System.out.println("You answered "+ lev1+" level 1 questions, ");
             System.out.print(lev2+" level 2 questions,");
             System.out.print(lev3+" level 3 questions,");
-            System.out.print("and "+lev2+" level 4 questions,");
+            System.out.print("and "+lev4+" level 4 questions,");
         }
         //the process above repeats for each of the following questions
         else if(quizType.equals("comp sci")){
@@ -146,7 +146,7 @@ public class Quizzer{
             System.out.println("You answered "+ lev1+" level 1 questions, ");
             System.out.print(lev2+" level 2 questions,");
             System.out.print(lev3+" level 3 questions,");
-            System.out.print("and "+lev2+" level 4 questions,");
+            System.out.print("and "+lev4+" level 4 questions,");
         }
         else if(quizType.equals("math")){
             MathQuestion firstQuestion=new MathQuestion(level,questionNum);
@@ -199,7 +199,7 @@ public class Quizzer{
             System.out.println("You answered "+ lev1+" level 1 questions, ");
             System.out.print(lev2+" level 2 questions,");
             System.out.print(lev3+" level 3 questions,");
-            System.out.print("and "+lev2+" level 4 questions,");
+            System.out.print("and "+lev4+" level 4 questions,");
         }
         else{
             //if the type of quiz is invalid, used recursion to rerun the method
